@@ -1,2 +1,0 @@
- new Dog();
-    // a->speak();
