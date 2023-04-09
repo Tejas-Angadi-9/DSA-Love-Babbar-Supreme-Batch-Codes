@@ -1,1 +1,0 @@
-// Linked list is a data structure in the data is stored in non-contagious mannerand there is no wastage of data like array using vector.
