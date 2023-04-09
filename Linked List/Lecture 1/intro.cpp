@@ -28,7 +28,7 @@ void print(Node *&head)
     while (temp != NULL)
     {
         cout << temp->data << " ";
-        temp = temp->next; // The pointer is moved forward
+        temp = temp->next; // The pointer is moved forward and we cannot use temp++ as it is non-contagious data memory
     }
 }
 
