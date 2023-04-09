@@ -20,6 +20,7 @@ public:
     }
 };
 
+// main function
 int main()
 {
     Animal a;
