@@ -1,20 +1,21 @@
-// Linked list a type of DS in which data is stored in non-contagious manner and there is no wastage of memeory. It grows/ shrinks dynamically
-
 #include <iostream>
 using namespace std;
 
+// creating a node
 class Node
 {
 public:
-    int data;
-    Node *next;
+    int data;   // data present in the node
+    Node *next; // pointer pointing to the next node
 
+    // creating a default constructor
     Node()
     {
         this->data = 0;
         this->next = NULL;
     }
 
+    // creating a parameterized constructor
     Node(int data)
     {
         this->data = data;
@@ -22,13 +23,14 @@ public:
     }
 };
 
-void print(Node *&head)
+// creating a print function
+void print(Node *first)
 {
-    Node *temp = head; // here temp is a pointer where adderess is stored but not the value
+    Node *temp = first;
     while (temp != NULL)
     {
         cout << temp->data << " ";
-        temp = temp->next; // The pointer is moved forward and we cannot use temp++ as it is non-contagious data memory
+        temp = temp -> next;
     }
 }
 
@@ -44,8 +46,6 @@ int main()
     second->next = third;
     third->next = fourth;
     fourth->next = fifth;
-    fifth->next = NULL;
 
-    cout << "Printing the LL" << endl;
     print(first);
 }
