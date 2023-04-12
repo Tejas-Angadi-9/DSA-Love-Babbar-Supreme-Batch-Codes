@@ -26,11 +26,11 @@ public:
 // creating a print function
 void print(Node *first)
 {
-    Node *temp = first;
-    while (temp != NULL)
+    // Node *temp = first;
+    while (first != NULL)
     {
-        cout << temp->data << " ";
-        temp = temp -> next;
+        cout << first->data<< " ";
+        first = first->next;
     }
 }
 
@@ -47,5 +47,6 @@ int main()
     third->next = fourth;
     fourth->next = fifth;
 
+    cout << "Printing the linked list" << endl;
     print(first);
 }
