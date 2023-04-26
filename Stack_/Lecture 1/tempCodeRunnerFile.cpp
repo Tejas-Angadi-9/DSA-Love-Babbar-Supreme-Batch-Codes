@@ -1,0 +1,2 @@
+    // backtrack
+    s.push(temp);

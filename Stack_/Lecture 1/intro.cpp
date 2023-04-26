@@ -23,4 +23,10 @@ int main()
         cout << "Stack is empty" << endl;
     else
         cout << "Stack is not empty" << endl;
+
+    while(!st.empty()){
+        cout<<st.top()<<" ";
+        st.pop();
+    }
+    cout<<endl;
 }
