@@ -1,13 +1,18 @@
+// Print
+
 #include <iostream>
 using namespace std;
+
 int power(int n)
 {
-    //base class
+    // bc
     if (n == 0)
+    {
         return 1;
+    }
 
-    //recursive relation
-    return 2 * power(n - 1);
+    int ans = 2 * power(n - 1);
+    return ans;
 }
 
 int main()

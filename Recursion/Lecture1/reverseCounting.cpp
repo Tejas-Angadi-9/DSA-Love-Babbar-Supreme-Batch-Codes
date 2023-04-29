@@ -1,20 +1,20 @@
 #include <iostream>
 using namespace std;
-void count(int n)
+
+void counting(int n)
 {
-    //Base class
+    // bc
     if (n == 0)
     {
+        // cout << n << " ";
         return;
     }
-
-    //Recursive relation
     cout << n << endl;
-    count(n - 1);
+    counting(n - 1);
 }
+
 int main()
 {
-    int n = 5;
-
-    count(n);
+    int n = 15;
+    counting(n);
 }
