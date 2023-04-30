@@ -17,6 +17,6 @@ int power(int n)
 
 int main()
 {
-    int n = 10;
+    int n = 4;
     cout << power(n);
 }
