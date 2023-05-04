@@ -15,7 +15,7 @@ void solve(stack<int> &s, int target)
     s.pop();
     // rec
     solve(s, target);
-    // BT
+    // BTi
     s.push(topElement);
 }
 
