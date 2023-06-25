@@ -4,6 +4,8 @@
         "ostream": "cpp",
         "new": "cpp",
         "deque": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "array": "cpp",
+        "string": "cpp"
     }
 }
